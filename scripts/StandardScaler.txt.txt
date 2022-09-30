@@ -1,0 +1,65 @@
+
+
+                                   -------------* Fonction Python sklearn StandardScaler() *---------------
+
+    -----/ On utilise la  StandardScaler() pour normaliser les données Python .
+
+    -----/ pour faire la normalisation des données on applique la relation (x-moy)/ecart sur chaque colonne .
+
+                    -------* Besoin de normalisation :
+
+
+    -----/ Avant d'entrer dans la normalisation, comprenons d'abord le concept de mise à l'échelle.
+
+           La mise à l' échelle des fonctionnalités est une étape essentielle dans la modélisation des algorithmes avec les jeux de données. Les données habituellement utilisées à des fins de modélisation sont dérivées par divers moyens tels que :
+
+                    Questionnaire
+                    Enquêtes
+                    Rechercher
+                    Grattage , etc...
+
+    -----/ La bibliothèque Python sklearn nous offre la fonction StandardScaler() pour normaliser les valeurs de données dans un format standard.
+
+                 ---> Syntaxe:
+
+                  object = StandardScaler()
+                  object.fit_transform(data)
+
+    -----/ Selon la syntaxe ci-dessus, nous créons initialement un objet de la StandardScaler()fonction. De plus, nous utilisons fit_transform()avec l'objet assigné pour transformer les données et les normaliser.
+
+    -----/ Remarque : La standardisation s'applique uniquement aux valeurs de données qui suivent la distribution normale .
+
+
+
+                    -------* Exemple :
+
+                    -------* from sklearn.datasets import load_iris
+
+                    -------* from sklearn.preprocessing import StandardScaler
+ 
+                             ---------------------------------------------------------------
+                            | dataset = load_iris()                                        | 
+                            |                                                              |
+                            | object= StandardScaler()                                     |
+                            |                                                              |
+                            |                                                              | 
+                            | # Splitting the independent and dependent variables          |
+                            |                                                              |
+                            | i_data = dataset.data                                        |         
+                            |                                                              |
+                            |response = dataset.target                                     |
+                            |                                                              |
+                            |                                                              |
+                            | # standardization                                            |           
+                            |                                                              |
+                            | scale = object.fit_transform(i_data)                         |
+                            |                                                              | 
+                            | print(scale)                                                 |
+                             ---------------------------------------------------------------
+
+
+
+
+
+
+

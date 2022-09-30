@@ -1,0 +1,32 @@
+
+
+
+                                   -------------* sklearn.scm.svc *---------------
+
+                    -------* Introduction
+    -----/ Les machines à vecteurs de support (SVM) sont des méthodes d'apprentissage automatique supervisées puissantes mais flexibles utilisées pour la classification, la régression et la détection des valeurs aberrantes. Les SVM sont très efficaces dans les espaces de grande dimension et sont généralement utilisés dans les problèmes de classification. Les SVM sont populaires et économes en mémoire car elles utilisent un sous-ensemble de points d'apprentissage dans la fonction de décision.
+
+          L'objectif principal des SVM est de diviser les ensembles de données en nombre de classes afin de trouver un hyperplan marginal maximum (MMH) qui peut être fait dans les deux étapes suivantes -
+
+          Les machines à vecteurs de support généreront d'abord des hyperplans de manière itérative qui séparent les classes de la meilleure façon.
+
+          Après cela, il choisira l'hyperplan qui sépare correctement les classes.
+
+   -----/ Certains concepts importants dans SVM sont les suivants -
+
+             ----- > Vecteurs de support - Ils peuvent être définis comme les points de données les plus proches de l'hyperplan. Les vecteurs de support aident à décider de la ligne de séparation.
+
+             ----- > Hyperplan - Le plan de décision ou l'espace qui divise un ensemble d'objets ayant différentes classes.
+
+             ----- > Marge - L'écart entre deux lignes sur les points de données du placard de différentes classes est appelé marge.
+
+
+                    -------* Classement des SVM :
+
+    -----/ Scikit-learn fournit trois classes, à savoir SVC, NuSVC et LinearSVC , qui peuvent effectuer une classification multiclasse.
+
+                    -------* SVC :
+
+    -----/ Il s'agit d'une classification vectorielle à support C dont l'implémentation est basée sur libsvm . Le module utilisé par scikit-learn est sklearn.svm.SVC . Cette classe gère le support multiclasse selon le schéma un contre un.
+    
+    -----/ Le parametre kernel : Ce paramètre spécifie le type de noyau à utiliser dans l'algorithme. nous pouvons choisir n'importe lequel parmi, 'linéaire', 'poly', 'rbf', 'sigmoïde', 'précalculé' . La valeur par défaut du noyau serait 'rbf' .
